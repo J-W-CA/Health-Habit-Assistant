@@ -10,8 +10,9 @@ A simple habit forming app build for iPhone in Swift 5 (iOS 11+)
 - [x] different colors and flags 
 - [x] Add/delete/edit/complete task
 - [x] dark mode
-- [x] Core Data support
+- [x] Core Data 
 - [x] CoreML for ideal bedtime calculating 
+- [x] Notification support
 - [x] Add/delete/edit/complete tasks
 ## Requirements
  - iOS 11.0+
