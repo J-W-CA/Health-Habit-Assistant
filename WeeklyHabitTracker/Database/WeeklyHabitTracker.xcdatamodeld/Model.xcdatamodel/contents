@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19G2021" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Archive" representedClassName="Archive" syncable="YES">
+        <attribute name="active" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="color" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="completedTotal" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="currentWeekNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="failedTotal" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="flag" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="goal" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="incompleteTotal" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="reminder" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="successRate" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="title" attributeType="String"/>
+        <relationship name="archivedHabits" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="ArchivedHabit" inverseName="archive" inverseEntity="ArchivedHabit"/>
+        <relationship name="habit" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Habit" inverseName="archive" inverseEntity="Habit"/>
+    </entity>
+    <entity name="ArchivedHabit" representedClassName="ArchivedHabit" syncable="YES">
+        <attribute name="endDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="notes" optional="YES" attributeType="String"/>
+        <attribute name="startDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="statusValues" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="Array&lt;Int64&gt;"/>
+        <attribute name="weekNumber" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="archive" maxCount="1" deletionRule="Nullify" destinationEntity="Archive" inverseName="archivedHabits" inverseEntity="Archive"/>
+    </entity>
+    <entity name="Habit" representedClassName=".Habit" syncable="YES">
+        <attribute name="buttonState" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="color" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="dateCreated" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="days" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="Array&lt;Bool&gt;"/>
+        <attribute name="flag" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="goal" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="priority" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="reminder" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="statusValues" optional="YES" attributeType="Transformable" valueTransformerName="NSSecureUnarchiveFromData" customClassName="Array&lt;Int64&gt;"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="tracking" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="uniqueID" optional="YES" attributeType="String"/>
+        <relationship name="archive" maxCount="1" deletionRule="Nullify" destinationEntity="Archive" inverseName="habit" inverseEntity="Archive"/>
+    </entity>
+    <elements>
+        <element name="Archive" positionX="-63" positionY="54" width="128" height="253"/>
+        <element name="ArchivedHabit" positionX="-261" positionY="153" width="128" height="133"/>
+        <element name="Habit" positionX="-461.44140625" positionY="93.8671875" width="128" height="238"/>
+    </elements>
+</model>
