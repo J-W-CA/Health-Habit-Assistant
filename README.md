@@ -28,3 +28,4 @@ A simple habit forming app build for iPhone in Swift 5 (iOS 11+)
 ### Improvements/To Do
 - [ ] watchOS complications + sync improvements
 - [ ] Reload notifications after user gave push permissions if initially declined 
+- [ ] Model creation to help you build new habit
