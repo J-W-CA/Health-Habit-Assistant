@@ -1,4 +1,4 @@
-# Health-assistant
+# Health-Habit-Assistant
 
 A simple habit forming app build for iPhone in Swift 5 (iOS 11+)
 (This Project is designed to be used in China 4C Computer Competition)
