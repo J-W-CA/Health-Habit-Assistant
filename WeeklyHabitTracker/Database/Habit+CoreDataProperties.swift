@@ -16,7 +16,7 @@ extension Habit {
     @nonobjc public class func fetchRequest() -> NSFetchRequest<Habit> {
         return NSFetchRequest<Habit>(entityName: "Habit")
     }
-
+    @NSManaged public var name: String?
     @NSManaged public var buttonState: Bool
     @NSManaged public var color: Int64
     @NSManaged public var dateCreated: Date
