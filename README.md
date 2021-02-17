@@ -4,6 +4,10 @@ A simple habit forming app build for iPhone in Swift 5 (iOS 11+)
 (This Project is designed to be used in China 4C Computer Competition)
 
 ## Main features
+- [x] Core Data 
+- [x] CoreML for ideal bedtime calculating 
+- [x] lauch animation 
+- [x] time arrange(self-setting)
 - [x] set daily tasks
 - [x] explanation for the detail
 - [x] notes keeping
@@ -11,8 +15,6 @@ A simple habit forming app build for iPhone in Swift 5 (iOS 11+)
 - [x] different colors and flags 
 - [x] Add/delete/edit/complete task
 - [x] dark mode
-- [x] Core Data 
-- [x] CoreML for ideal bedtime calculating 
 - [x] Notification support
 - [x] Add/delete/edit/complete tasks
 ## Requirements
@@ -30,3 +32,4 @@ A simple habit forming app build for iPhone in Swift 5 (iOS 11+)
 - [ ] watchOS complications + sync improvements
 - [ ] Reload notifications after user gave push permissions if initially declined 
 - [ ] Model creation to help you build new habit
+- [ ] Widget building
