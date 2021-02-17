@@ -89,7 +89,7 @@ struct SettingsSwiftUI: View {
                    
                 }
                 
-            }.navigationBarTitle(Text("Health Fixed"))
+            }.navigationBarTitle(Text("Health Arrange"))
             .navigationBarItems(trailing:
                                     Button(action : calculateBedTime){
                                         Text("Calculate")
