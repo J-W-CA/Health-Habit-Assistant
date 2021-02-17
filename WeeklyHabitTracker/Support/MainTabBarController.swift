@@ -39,11 +39,16 @@ class MainTabBarController: UITabBarController {
                                                                                                      userNotifCenter: self.appDelegate.getUserNotificationCenter()))
 
         let settingsHostController = SettingsViewController(rootView: SettingsSwiftUI())
-        settingsHostController.title = "Health Fixed"
-        settingsHostController.tabBarItem.title = "Health Fixed"
-        settingsHostController.tabBarItem.image = UIImage(named: "gear", in: nil, with: boldConfig)!
+        settingsHostController.title = "Health Arrange"
+        settingsHostController.tabBarItem.title = "Health Arrange"
+        settingsHostController.tabBarItem.image = UIImage(named: "tray.full.fill", in: nil, with: boldConfig)!
+        
+        let newpageview = NewContentView(rootView: NewContentViewCon())
+        newpageview.title = "Time Arrange"
+        newpageview.tabBarItem.title = "Time Arrange"
+        newpageview.tabBarItem.image = UIImage(named: "calendar", in: nil, with: boldConfig)!
 
-        viewControllers = [homeNavController, historyNavController, settingsHostController]
+        viewControllers = [homeNavController, historyNavController, settingsHostController, newpageview]
     }
         
     fileprivate func buildTabBarControllers(withTitle title: String, andImage image: UIImage, andRootVC vc: UIViewController = UIViewController()) -> UINavigationController {
