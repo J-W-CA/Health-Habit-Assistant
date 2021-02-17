@@ -9,7 +9,7 @@
 import UIKit
 import BackgroundTasks
 import UserNotifications
-
+var isCameFromNotification: Bool = false
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     private var habits: [Habit]!
@@ -31,7 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             else { print("not granted") }
         }
 
-        BGTaskScheduler.shared.register(forTaskWithIdentifier: "com.forming.refresh", using: nil) { [weak self] (task) in
+        BGTaskScheduler.shared.register(forTaskWithIdentifier: "com.whealthassistant.refresh", using: nil) { [weak self] (task) in
             guard let self = self else { return }
             self.handleAppRefresh(task: task as! BGAppRefreshTask)
         }
@@ -109,8 +109,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let request = UNNotificationRequest(identifier: UUID().uuidString, content: content, trigger: trigger)
 //        self.userNotificationCenter.add(request)
 //    }
+    
 
     // MARK: UISceneSession Lifecycle
+    func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
+        
+        // Determine the user action
+        switch response.actionIdentifier {
+            case UNNotificationDismissActionIdentifier:
+                print("Dismissed")
+            case UNNotificationDefaultActionIdentifier:
+                print("Default")
+                isCameFromNotification = true
+            default:
+                print("Unknown action")
+        }
+        completionHandler()
+    }
+    
     func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
         // Called when a new scene session is being created.
         // Use this method to select a configuration to create the new scene with.
@@ -124,7 +140,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func scheduleAppRefresh() {
-        let request = BGAppRefreshTaskRequest(identifier: "com.forming.refresh")
+        let request = BGAppRefreshTaskRequest(identifier: "com.whealthassistant.refresh")
         request.earliestBeginDate = Date(timeIntervalSinceNow: 3600)
 
         do {
