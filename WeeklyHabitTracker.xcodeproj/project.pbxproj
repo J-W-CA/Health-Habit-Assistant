@@ -193,8 +193,8 @@
 		D404690025D9153A00A8BAA1 /* PagerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagerView.swift; sourceTree = "<group>"; };
 		D404690525D9154700A8BAA1 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		D404691225D915B800A8BAA1 /* Interface.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Interface.storyboard; sourceTree = "<group>"; };
-		D404691725D915C300A8BAA1 /* Pomosh WatchRelease.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Pomosh WatchRelease.entitlements"; sourceTree = "<group>"; };
-		D404691825D915CA00A8BAA1 /* Pomosh Watch.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Pomosh Watch.entitlements"; sourceTree = "<group>"; };
+		D404691725D915C300A8BAA1 /* WatchRelease.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = WatchRelease.entitlements; sourceTree = "<group>"; };
+		D404691825D915CA00A8BAA1 /* Watch.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Watch.entitlements; sourceTree = "<group>"; };
 		D42AC6E125D7BADD008A83E5 /* watchapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watchapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D42AC6E525D7BADF008A83E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D42AC6EA25D7BAE0008A83E5 /* watchapp Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "watchapp Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -345,8 +345,8 @@
 			isa = PBXGroup;
 			children = (
 				D4B1107C25DBF6450019E968 /* Assets.xcassets */,
-				D404691725D915C300A8BAA1 /* Pomosh WatchRelease.entitlements */,
-				D404691825D915CA00A8BAA1 /* Pomosh Watch.entitlements */,
+				D404691725D915C300A8BAA1 /* WatchRelease.entitlements */,
+				D404691825D915CA00A8BAA1 /* Watch.entitlements */,
 				D404691225D915B800A8BAA1 /* Interface.storyboard */,
 				D42AC6E525D7BADF008A83E5 /* Info.plist */,
 			);
