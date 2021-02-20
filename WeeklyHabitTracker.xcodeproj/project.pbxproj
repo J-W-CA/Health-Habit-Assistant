@@ -185,8 +185,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		D40468EF25D914DF00A8BAA1 /* Pomosh Watch Extension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Pomosh Watch Extension.entitlements"; sourceTree = "<group>"; };
-		D40468F025D914EB00A8BAA1 /* Pomosh Watch ExtensionRelease.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Pomosh Watch ExtensionRelease.entitlements"; sourceTree = "<group>"; };
+		D40468EF25D914DF00A8BAA1 /* Watch Extension.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Watch Extension.entitlements"; sourceTree = "<group>"; };
+		D40468F025D914EB00A8BAA1 /* Watch ExtensionRelease.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = "Watch ExtensionRelease.entitlements"; sourceTree = "<group>"; };
 		D40468F125D9151700A8BAA1 /* HostingController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
 		D40468F625D9152F00A8BAA1 /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		D40468FB25D9153500A8BAA1 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
@@ -242,12 +242,12 @@
 		D4DE2B3A25DBA8F400CAC8A2 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		D4DE2B3B25DBA8F400CAC8A2 /* NewContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewContentView.swift; sourceTree = "<group>"; };
 		D4DE2B3C25DBA8F400CAC8A2 /* hit.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = hit.wav; sourceTree = "<group>"; };
-		D4DE2B3D25DBA8F400CAC8A2 /* PomoshRelease.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = PomoshRelease.entitlements; sourceTree = "<group>"; };
+		D4DE2B3D25DBA8F400CAC8A2 /* Release.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Release.entitlements; sourceTree = "<group>"; };
 		D4DE2B3E25DBA8F400CAC8A2 /* toggle.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = toggle.wav; sourceTree = "<group>"; };
 		D4DE2B3F25DBA8F400CAC8A2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D4DE2B4025DBA8F400CAC8A2 /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		D4DE2B4125DBA8F400CAC8A2 /* Button.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
-		D4DE2B4225DBA8F400CAC8A2 /* PomoshDebug.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = PomoshDebug.entitlements; sourceTree = "<group>"; };
+		D4DE2B4225DBA8F400CAC8A2 /* Debug.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Debug.entitlements; sourceTree = "<group>"; };
 		D4DE2B4425DBA8F400CAC8A2 /* end.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = end.wav; sourceTree = "<group>"; };
 		D4DE2B4625DBA8F400CAC8A2 /* Pomosh.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Pomosh.xcdatamodel; sourceTree = "<group>"; };
 		D4DE2B4725DBA8F400CAC8A2 /* TimerRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerRing.swift; sourceTree = "<group>"; };
@@ -356,8 +356,8 @@
 		D42AC6EE25D7BAE0008A83E5 /* watchapp Extension */ = {
 			isa = PBXGroup;
 			children = (
-				D40468EF25D914DF00A8BAA1 /* Pomosh Watch Extension.entitlements */,
-				D40468F025D914EB00A8BAA1 /* Pomosh Watch ExtensionRelease.entitlements */,
+				D40468EF25D914DF00A8BAA1 /* Watch Extension.entitlements */,
+				D40468F025D914EB00A8BAA1 /* Watch ExtensionRelease.entitlements */,
 				D42AC6EF25D7BAE0008A83E5 /* WeeklyHabitTrackerApp.swift */,
 				D40468F125D9151700A8BAA1 /* HostingController.swift */,
 				D42AC6F125D7BAE0008A83E5 /* ContentView.swift */,
@@ -546,8 +546,8 @@
 				D4DE2B4025DBA8F400CAC8A2 /* Fonts */,
 				D4DE2B3C25DBA8F400CAC8A2 /* hit.wav */,
 				D4DE2B4525DBA8F400CAC8A2 /* Pomosh.xcdatamodeld */,
-				D4DE2B4225DBA8F400CAC8A2 /* PomoshDebug.entitlements */,
-				D4DE2B3D25DBA8F400CAC8A2 /* PomoshRelease.entitlements */,
+				D4DE2B4225DBA8F400CAC8A2 /* Debug.entitlements */,
+				D4DE2B3D25DBA8F400CAC8A2 /* Release.entitlements */,
 				D4DE2B4C25DBA8F400CAC8A2 /* Preview Content */,
 				D4DE2B4D25DBA8F400CAC8A2 /* session.wav */,
 				D4DE2B3A25DBA8F400CAC8A2 /* SettingsView.swift */,

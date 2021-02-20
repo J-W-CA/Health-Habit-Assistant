@@ -2,8 +2,8 @@
 //  HostingController.swift
 //  Pomosh Watch Extension
 //
-//  Created by Steven J. Selcuk on 3.06.2020.
-//  Copyright © 2020 Steven J. Selcuk. All rights reserved.
+//  Created by Steven Jason Wang on 3.06.2020.
+//  Copyright © 2020 Steven Jason Wang. All rights reserved.
 //
 
 import WatchKit
