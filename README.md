@@ -1,6 +1,7 @@
 # Health-Habit-Assistant
 
 A simple habit forming app build for iPhone in Swift 5 (iOS 11+)
+Already won the National Third Prize in Mobile Application Innovation Contest
 (This Project is designed to be used in China 4C Computer Competition)
 
 ## Main features
@@ -31,5 +32,5 @@ A simple habit forming app build for iPhone in Swift 5 (iOS 11+)
 ### Improvements/To Do
 - [x] watchOS complications + sync improvements
 - [x] Reload notifications after user gave push permissions if initially declined 
-- [ ] Model creation to help you build new habit
+- [x] Model creation to help you build new habit
 - [ ] Widget building
